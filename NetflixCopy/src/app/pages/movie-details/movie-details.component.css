@@ -1,3 +1,7 @@
+body{
+background-color: black;
+}
+
 img{
   width: 100%;
   height: auto;
@@ -11,4 +15,15 @@ h3
 
 p{
   color: #ffffff;
+}
+a{
+  background-color: #E50914;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: #E50914;
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }

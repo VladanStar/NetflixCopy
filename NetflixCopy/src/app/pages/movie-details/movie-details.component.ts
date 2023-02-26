@@ -20,6 +20,8 @@ export class MovieDetailsComponent implements OnInit {
     let getParamId = this.router.snapshot.paramMap.get('id');
     console.log(getParamId, 'getparamid#');
     this.getMovie(getParamId);
+    this.getVideo(getParamId);
+    this.getMovieCast(getParamId);
   }
   getMovie(id: any) {
     this.service.getMovieDetail(id).subscribe((result) => {
@@ -35,7 +37,10 @@ export class MovieDetailsComponent implements OnInit {
         if (element.type == 'Trailer') {
           this.getMovieVideoResult = element.key;
         }
-      });
+      }
+
+      );
+// this.getMovieVideoResult=result;
     });
   }
 
