@@ -1,13 +1,14 @@
 <div class="container mt-5 p-5">
-  <form action="#">
+  <form [formGroup]="searchForm" (ngSubmit)="submitForm()" >
     <div class="row">
-      <div class="mb-3">
+      <div class="mb-3 col-lg-10">
         <label for="Input1" class="form-label">Search</label>
         <input
           type="text"
           class="form-control"
           id="Input1"
           placeholder="Serach Movie"
+formControlName="movieName"
         />
       </div>
       <div class="col-lg-2">

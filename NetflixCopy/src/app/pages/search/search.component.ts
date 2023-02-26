@@ -8,4 +8,10 @@ import{FormGroup, FormControl}from'@angular/forms';
 })
 export class SearchComponent {
 
+searchForm = new FormGroup({
+'movieName':new FormControl(null)
+});
+submitForm(){
+console.log(this.searchForm.value,"searchform#")
+}
 }
