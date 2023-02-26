@@ -3,4 +3,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 body{
   font-family: 'Ubuntu', sans-serif;
+  background-color: black !important ;
 }
