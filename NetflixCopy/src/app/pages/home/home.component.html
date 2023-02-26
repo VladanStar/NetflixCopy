@@ -6,7 +6,8 @@
       <div
         class="carousel-item active"
         data-bs-interval="10000"
-        *ngFor="let b of bannerResult"
+        *ngFor="let b of bannerResult; let i = index"
+[ngClass]="{active: i===1}"
       >
         <img src="https://image.tmdb.org/t/p/original/{{b.backdrop_path}}" class="d-block w-100" alt="Image The movie database" />
         <div class="carousel-caption d-none d-md-block">
