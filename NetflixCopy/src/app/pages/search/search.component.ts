@@ -12,6 +12,6 @@ searchForm = new FormGroup({
 'movieName':new FormControl(null)
 });
 submitForm(){
-console.log(this.searchForm.value,"searchform#")
+console.log(this.searchForm.value, "searchform#")
 }
 }

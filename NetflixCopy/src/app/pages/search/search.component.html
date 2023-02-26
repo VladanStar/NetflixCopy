@@ -1,19 +1,20 @@
 <div class="container mt-5 p-5">
-  <form [formGroup]="searchForm" (ngSubmit)="submitForm()" >
+  <form [formGroup]="searchForm" (ngSubmit)="submitForm()">
     <div class="row">
       <div class="mb-3 col-lg-10">
-        <label for="Input1" class="form-label">Search</label>
+        <!-- <label for="Input1" class="form-label">Search</label> -->
         <input
           type="text"
           class="form-control"
-          id="Input1"
           placeholder="Serach Movie"
-formControlName="movieName"
+          formControlName="movieName"
         />
       </div>
       <div class="col-lg-2">
-<button class="btn btn-md" type="button">Search</button>
+        <button class="btn btn-md" type="submit">Search</button>
       </div>
     </div>
   </form>
+
+
 </div>
