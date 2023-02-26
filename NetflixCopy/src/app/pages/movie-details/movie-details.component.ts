@@ -8,6 +8,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./movie-details.component.css']
 })
 export class MovieDetailsComponent implements OnInit {
+
+getMovieDetailsResult:any;
 constructor(private service:MovieApiServiceService, private  router:ActivatedRoute){}
 ngOnInit(): void {
 let getParamId=this.router.snapshot.paramMap.get('id');
@@ -16,7 +18,8 @@ this.getMovie(getParamId)
 }
 getMovie(id:any){
 this.service.getMovieDetail(id).subscribe((result)=>{
-console.log(result,"getmoviedetails#")
+console.log(result,"getmoviedetails#");
+this.getMovieDetailsResult=result;
 })
 }
 }

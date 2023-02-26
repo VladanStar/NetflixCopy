@@ -34,7 +34,7 @@
 .largeposter {
   max-height: 300px;
 }
-.rowposter::-webkit-scrollbar{
-display: none;
+.rowposter::-webkit-scrollbar
+{
+    display: none;
 }
-

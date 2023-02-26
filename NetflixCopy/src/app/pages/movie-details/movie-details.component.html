@@ -1,9 +1,20 @@
 <div class="container mt-5">
-<div class="row">
+<div class="row p-5">
+
+  <div class="col-lg-2" *ngIf="getMovieDetailsResult.poster_path">
+
+</div>
 <div class="col-lg-2">
+  <img
+  src="https://image.tmdb.org/t/p/original/{{ getMovieDetailsResult.poster_path }}"
+alt="img movie deetails result"
+  >
+
 
 </div>
 <div class="col-lg-10">
+<h3 class="mt-2 mb-2">{{getMovieDetailsResult.original_title}}</h3>
+<p class="mb-3 mt-3">{{getMovieDetailsResult.overview}}</p>
 
 </div>
 
