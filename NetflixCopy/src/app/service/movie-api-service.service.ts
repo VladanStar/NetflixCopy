@@ -22,4 +22,10 @@ return this.http.get(`${this.baseurl}/trending/all/week?api_key=${this.apikey}`)
 }
 //bannerapi='${this.baseurl}/trending/all/week?api_key=${this.apikey}'
 
+
+tredingMovieApidata():Observable<any>
+{
+return this.http.get(`${this.baseurl}/trending/movie/day?api_key=${this.apikey}`)
+}
+
 }
