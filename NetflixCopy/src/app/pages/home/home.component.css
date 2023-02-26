@@ -28,7 +28,7 @@
   margin-right: 7px;
 }
 .rowimg:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
   cursor: pointer;
 }
 .largeposter {
