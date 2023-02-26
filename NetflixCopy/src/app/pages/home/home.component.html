@@ -7,13 +7,16 @@
         class="carousel-item active"
         data-bs-interval="10000"
         *ngFor="let b of bannerResult; let i = index"
-[ngClass]="{active: i===1}"
+        [ngClass]="{ active: i === 1 }"
       >
-        <img src="https://image.tmdb.org/t/p/original/{{b.backdrop_path}}" class="d-block w-100" alt="Image The movie database" />
+        <img
+          src="https://image.tmdb.org/t/p/original/{{ b.backdrop_path }}"
+          class="d-block w-100"
+          alt="Image The movie database"
+        />
         <div class="carousel-caption d-none d-md-block">
-
-          <h5>{{b.original_title}}</h5>
-          <p>{{b.overview}}</p>
+          <h5>{{ b.original_title }}</h5>
+          <p>{{ b.overview }}</p>
         </div>
       </div>
     </div>
@@ -39,9 +42,17 @@
 </div>
 <!-- banner end -->
 <div class="container mt-4 p-4">
-
-<!-- trending movies -->
-<div class="row">
-<h5 class="text-white">Trending Movies</h5>
-</div>
+  <!-- trending movies -->
+  <div class="row">
+    <h5 class="text-white">Trending Movies</h5>
+    <div div class="rowposter">
+      <ng-container *ngFor="let t of trendingMovieResult; let i = index">
+        <img
+          src="https://image.tmdb.org/t/p/original/{{ t.poster_path }}"
+          class="rowimg largeposter"
+          alt="Image The movie database"
+        />
+      </ng-container>
+    </div>
+  </div>
 </div>

@@ -4,4 +4,5 @@
 body{
   font-family: 'Ubuntu', sans-serif;
   background-color: black !important ;
+overflow-x:hidden;
 }

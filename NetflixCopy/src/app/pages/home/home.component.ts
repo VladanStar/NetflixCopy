@@ -12,8 +12,10 @@ constructor( private service:MovieApiServiceService){}
 
 
 bannerResult:any=[];
+trendingMovieResult:any=[]
 ngOnInit():void{
 this.bannerData();
+this.trendingData();
 
 }
 //bannerData
@@ -22,6 +24,13 @@ this.service.bannerApiData().subscribe((result) =>{
 console.log(result,"bannerresult#");
 this.bannerResult=result.results;
 console.log(this.bannerResult)
+})
+}
+trendingData(){
+this.service.tredingMovieApiData().subscribe((result)=>{
+console.log(result, "trendingresult#");
+this.trendingMovieResult=result.results;
+console.log(this.trendingMovieResult)
 })
 }
 
